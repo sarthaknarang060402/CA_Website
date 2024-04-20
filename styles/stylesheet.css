@@ -1,0 +1,94 @@
+section{
+  background-color: #f9f7f6;
+}
+
+.about {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+.custom-navbar {
+  background-color: #009c4c;
+}
+img.rounded-corners {
+  border-radius: 10px;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.animatedbox {
+  position: relative;
+}
+.movingBox {
+  position: relative;
+  width: 100%; 
+  max-width: 400px; /* Set the maximum width of the container */
+  height: 400px; /* Let the height adjust according to the aspect ratio */
+}
+@media (max-width: 990px) {
+  .movingBox {
+    position: relative;
+    width: 80%; /* Set the width of the container to 80% of the viewport width */
+    max-width: 400px; /* Set the maximum width of the container */
+    height: 300px; /* Let the height adjust according to the aspect ratio */
+    margin: 0 auto; /* Center the box horizontally */
+  }
+}
+.movingBox svg {
+  position: absolute;
+  width: 100%; /* Make the SVG element fill the container */
+  height: 100%; /* Let the height adjust according to the aspect ratio */
+  top: 0;
+  left: 0;
+}
+.movingShape1 {
+  animation: move1 2s ease-in-out infinite; /* Animation duration and timing */
+}
+.movingShape2 {
+  animation: move2 2s ease-in-out infinite; /* Animation duration and timing */
+  z-index: 1;
+}
+.still {
+  z-index: 2;
+}
+
+.about-info {
+  text-align: center;
+}
+
+.services ul {
+  text-align: center;
+  list-style: none; /* Remove default list styles */
+  padding: 0;/* Remove default padding */
+  margin: 0;/* Remove default margin*/
+}
+
+.services ul li {
+  height: 150px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  display: inline-block; /* Display list items as inline-block */
+  margin-right: 10px; /* Add some space between list items */
+  vertical-align: top; /* Align list items to the top */
+}
